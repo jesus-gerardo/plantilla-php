@@ -1,7 +1,7 @@
 <?php
 
     return [
-        'use' => 'default',
+        'use' => env('DB_CONNECTION', 'default'),
         
         'instances' => [
             "default" => [
@@ -11,7 +11,21 @@
                 "password" => '',
                 "charset" => "utf-8"
             ],
-            'mysql' => []
+            'mysql' => [
+                'hostname' => 'localhost',
+                "database" => 'test',
+                "username" => 'root',
+                "password" => '',
+                "charset" => "utf-8"
+            ],
+            'mysql' => [
+                'hostname' => 'localhost',
+                "database" => 'test',
+                "username" => 'root',
+                "password" => '',
+                "charset" => "utf-8",
+                'schema' => 'public'
+            ]
         ]
     ]
 

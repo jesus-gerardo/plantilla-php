@@ -1,1 +1,6 @@
+#directories
+vendor
+
+#file 
 .env
+composer.lock
